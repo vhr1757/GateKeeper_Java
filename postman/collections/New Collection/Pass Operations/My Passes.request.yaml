@@ -1,0 +1,10 @@
+$kind: http-request
+name: My Passes
+url: http://localhost:8080/api/passes/my/2
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: prince@example.com
+    password: prince123
+order: 1385959132111279

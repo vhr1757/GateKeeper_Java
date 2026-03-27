@@ -1,0 +1,23 @@
+$kind: http-request
+name: Create Event
+url: http://localhost:8080/api/admin/event
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Tech Fest 2026\",\r
+
+    \    \"location\": \"Auditorium\",\r
+
+    \    \"capacity\": 2,\r
+
+    \    \"eventDate\": \"2026-05-20T10:00:00\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: vedansh@example.com
+    password: admin123
+order: 1774352761454

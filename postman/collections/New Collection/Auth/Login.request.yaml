@@ -1,0 +1,17 @@
+$kind: http-request
+name: Login
+url: http://localhost:8080/api/auth/login
+method: POST
+queryParams:
+  - key: email
+    value: vedansh@example.com
+    disabled: true
+  - key: password
+    value: admin123
+    disabled: true
+body:
+  type: urlencoded
+  content:
+    email: vedansh@example.com
+    password: admin123
+order: 4460497074641149

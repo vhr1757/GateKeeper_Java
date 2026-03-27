@@ -24,13 +24,13 @@ public class PassController {
         }
     }
 
-    @GetMapping("/my/{userId}")
-    public ResponseEntity<List<Pass>> getMyPasses(@PathVariable Long userId) {
+    @GetMapping("/my")
+    public ResponseEntity<List<Pass>> getMyPasses(@RequestParam Long userId) {
         return ResponseEntity.ok(eventService.getMyPasses(userId));
     }
 
-    @PostMapping("/validate/{passCode}")
-    public ResponseEntity<String> validate(@PathVariable String passCode) {
+    @PostMapping("/validate")
+    public ResponseEntity<String> validate(@RequestParam String passCode) {
         String result = eventService.validatePass(passCode);
         return ResponseEntity.ok(result);
     }

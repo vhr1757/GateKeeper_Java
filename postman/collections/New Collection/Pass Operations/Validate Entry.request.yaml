@@ -1,0 +1,5 @@
+$kind: http-request
+name: Validate Entry
+url: ""
+method: GET
+order: 3863936507628043

@@ -1,0 +1,21 @@
+$kind: http-request
+name: Update Event
+url: http://localhost:8080/api/admin/events/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\": \"Updated Tech Fest\", \r
+
+    \    \"location\": \"Main Hall\", \r
+
+    \    \"capacity\": 5\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: vedansh@example.com
+    password: admin123
+order: 1478304475235521

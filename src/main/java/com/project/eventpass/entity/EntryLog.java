@@ -1,5 +1,6 @@
 package com.project.eventpass.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,5 +23,6 @@ public class EntryLog {
 
     @ManyToOne
     @JoinColumn(name = "pass_id")
+    @JsonIgnore
     private Pass pass;
 }

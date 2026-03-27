@@ -1,0 +1,13 @@
+$kind: http-request
+name: Book a Pass
+url: http://localhost:8080/api/passes/book?userId=9&eventId=1
+method: POST
+queryParams:
+  userId: "9"
+  eventId: "1"
+auth:
+  type: basic
+  credentials:
+    username: prince@example.com
+    password: prince123
+order: 988115555792926

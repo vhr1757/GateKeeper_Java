@@ -1,0 +1,5 @@
+$kind: http-request
+name: New Request
+url: http://localhost:8080/api/admin/logs
+method: GET
+order: 4059207068461621

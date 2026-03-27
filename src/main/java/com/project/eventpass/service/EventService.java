@@ -111,3 +111,4 @@ public class EventService {
         return "ACCESS GRANTED: Welcome to " + pass.getEvent().getTitle();
     }
 }
+

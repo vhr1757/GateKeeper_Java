@@ -1,0 +1,18 @@
+$kind: http-request
+name: Create Admin
+url: http://localhost:8080/api/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Vedansh Rajput\",\r
+
+    \    \"email\": \"vedansh@example.com\",\r
+
+    \    \"password\": \"admin123\",\r
+
+    \    \"role\": \"ROLE_ADMIN\"\r
+
+    }"
+order: 1774349806002

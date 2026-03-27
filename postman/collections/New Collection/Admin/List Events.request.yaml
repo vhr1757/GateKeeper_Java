@@ -1,0 +1,10 @@
+$kind: http-request
+name: List Events
+url: http://localhost:8080/api/admin/events
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: vedansh@example.com
+    password: admin123
+order: 938993059474608

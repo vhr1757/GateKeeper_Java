@@ -29,9 +29,8 @@ public class AuthService {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
-        if(!encoder.matches(password, user.getPassword())) {
-            return user;
-        }
+        boolean isMatch = encoder.matches(password, user.getPassword());
+        if(isMatch) return user;
         throw new RuntimeException("Invalid Credentials");
     }
 }
